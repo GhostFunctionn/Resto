@@ -1,0 +1,65 @@
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+main,
+header {
+  padding: 1rem;
+}
+
+img {
+  /* defaults all images to 100% of the its parent element */
+  width: 100%;
+}
+
+/* HEADER START */
+header nav ul li {
+  display: none;
+}
+
+#logo {
+  display: inline;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  font-family: "Rancho", cursive;
+}
+
+#burger-menu {
+  display: inline;
+  float: right;
+  font-size: 1.6rem;
+}
+/* HEADER END */
+
+/* MAIN START */
+/* MAIN END */
+@media screen and (min-width: 725px) {
+  body {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  header nav ul li {
+    display: inline;
+  }
+
+  #burger-menu {
+    display: none;
+  }
+}

@@ -19,7 +19,7 @@ img {
   width: 100%;
 }
 
-/* HEADER START */
+/* ----- HEADER START ----- */
 header nav ul li {
   display: none;
 }
@@ -36,10 +36,49 @@ header nav ul li {
   float: right;
   font-size: 1.6rem;
 }
-/* HEADER END */
+/* ----- HEADER END ----- */
 
-/* MAIN START */
-/* MAIN END */
+/* ------ MAIN START ----- */
+.hero-info h1 {
+  font-weight: lighter;
+  font-size: 3.5rem;
+  color: rgb(50, 50, 50);
+  margin: 3rem 0;
+}
+
+.vegan-green {
+  color: #2a9d8f;
+}
+
+#hero-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+#styled-menu-button {
+  background-color: #e76f51;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  box-shadow: 1px 1px 10px #e76f51;
+  border-radius: 5px;
+  border: none;
+  margin-right: 15%;
+}
+
+#styled-location-button {
+  border: none;
+  background-color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.hero-info img {
+  margin: 3rem 0;
+}
+
+/* ----- MAIN END ------ */
+
+/* ----- MEDIA QUERIES ------ */
 @media screen and (min-width: 725px) {
   body {
     max-width: 960px;
@@ -61,5 +100,27 @@ header nav ul li {
 
   #burger-menu {
     display: none;
+  }
+
+  .hero {
+    display: flex;
+    padding: 1rem;
+  }
+
+  .hero-info {
+    padding: 1rem;
+  }
+
+  .hero-info-block {
+    display: block;
+  }
+
+  #hero-buttons {
+    justify-content: flex-start;
+  }
+
+  #hero-image {
+    width: 60%;
+    height: auto;
   }
 }

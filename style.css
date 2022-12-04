@@ -154,6 +154,7 @@ header nav ul li {
 
 .speciality-img {
   box-shadow: 5px 5px 14px rgba(200, 200, 200, 0.8);
+  margin-bottom: 3rem;
 }
 /* ----- SPECIALS STYLING END ------ */
 
@@ -207,6 +208,33 @@ header nav ul li {
 
 /* ----- MENU STYLING END ------ */
 
+/* ----- TESTIMONY STYLING START ------ */
+.testimony-hero {
+  position: relative;
+}
+
+.testimony-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transform: translate(-50%, -50%);
+
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 1.4rem;
+  width: 80%;
+  height: 100%;
+  font-weight: lighter;
+}
+
+.testimony-quote {
+  font-size: 6rem;
+}
+/* ----- TESTIMONY STYLING END ------ */
+
 /* ----- MEDIA QUERIES ------ */
 @media screen and (min-width: 725px) {
   body {
@@ -249,7 +277,7 @@ header nav ul li {
   }
 
   #hero-image {
-    width: 60%;
+    width: 55%;
     height: auto;
   }
 
